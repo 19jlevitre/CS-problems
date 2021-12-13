@@ -25,3 +25,11 @@ function solution(a, x) {
     }
     return result
     }
+
+    function solution(a) {
+        let res = []
+    for(let i =0; i< a.length-1; i++){
+        res.push(a[i]-a[i+1])
+    }
+    return res
+    }
