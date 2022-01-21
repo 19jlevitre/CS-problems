@@ -82,3 +82,19 @@ function solution(a, x) {
         }
         return count
         }
+
+        function get_window(a, i, window_size){
+            return a.slice(i, i+window_size)
+        }
+        function solution(a, window_size) {
+        let res = []
+            for(let i = 0; i <= a.length-window_size; i++){
+                const wind = get_window(a, i , window_size)
+                let count = 0
+                for(let v of wind){
+                count += v
+                }
+                res.push(count/window_size)
+            }
+            return res
+        }
