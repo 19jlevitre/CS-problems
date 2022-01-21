@@ -98,3 +98,20 @@ function solution(a, x) {
             }
             return res
         }
+        function get_window(a, i, window_size){
+            return a.slice(i, i+window_size)
+        }
+        function solution(a, window_size) {
+        let res = []
+            for(let i = 0; i <= a.length-window_size; i++){
+                const wind = get_window(a, i , window_size)
+                let all_odd = true
+                for(let v of wind){
+                if(v % 2 ===0){
+                    all_odd = false
+                }
+                }
+                res.push(all_odd)
+            }
+            return res
+        }
