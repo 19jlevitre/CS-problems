@@ -51,3 +51,16 @@ function solution(a, x) {
         }
         return res
     }
+
+    // took the GCA and got a 668
+    // took the practice GCA and got a 674
+    
+    function solution(s) {
+        for(let x of s){
+            if(x !== undefined){
+                x+2
+                return "_"
+            }else
+            return "_"
+        }
+        }
